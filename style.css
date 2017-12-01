@@ -1,0 +1,123 @@
+/* Setting the header style */
+header{
+    background: #ff694a;
+    padding-top: 25px;
+    min-height: 50px;
+    color: #ffffff;
+    border-bottom:#476bec 10px solid;
+}
+
+.highlight{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.textColor{
+    color: #222222; 
+}
+
+header .highlight{
+    color: #476bec;
+    font-weight: bold;
+  }
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+ /* The animation on the header's text */
+.sliding {
+    position: relative;
+    left: -50%;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+/* Setting the header design*/
+header nav{
+    float: right;
+    margin-top: -20px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+  
+}
+
+header li{
+    float: top;
+    display: inline;
+  }
+  
+
+header a{
+    color:#476bec;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+  
+  }
+
+
+/*Applying the animation and setting the background*/
+.background{
+    min-height: 400px;
+    background:url('food.jpg') no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #ffffff;
+    object-fit: cover;
+  }
+
+
+/* Animation on the body of the html*/
+body{
+  background-color: #476bec; 
+  -webkit-animation-name: background-change; 
+  -webkit-animation-duration: 4s; 
+  animation-name: background-change;
+  animation-duration: 4s;
+  animation-iteration-count:infinite;
+  
+}
+
+@keyframes background-change {
+  0%   {background-color: #ffffff;}
+  25%  {background-color: #5c7ef0;}
+  50%  {background-color: #5378f3;}
+  75% {background-color: #587ef0;}
+  100% {background-color: #476bec;}
+}
+  
+  
+  
+@-webkit-keyframes background-change {
+  0%   {background-color: #ffffff;}
+  25%  {background-color: #5c7ef0;}
+  50%  {background-color: #5378f3;}
+  75% {background-color: #587ef0;}
+  100% {background-color: #4670f8;}
+}
+
+
+footer{
+  padding: 50px;
+  color: #222222;
+  background-color: #476bec;
+  text-align: center;
+}
+
+
+
+
+/* Standard syntax */
+@keyframes example {
+  0%   {
+    left: -50%;
+  }
+  100% {
+    left: 110%;
+  }
+}
